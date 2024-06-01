@@ -1,7 +1,7 @@
 let buttons = document.querySelectorAll(".drum");
 for (let i = 0;  i<buttons.length; i++){
     buttons[i].addEventListener("click", function() {
-        var clickedBtn = this.innerHTML;        
+        let clickedBtn = this.innerHTML;        
         makeSound(clickedBtn);
         makeAnimae(clickedBtn);
     })        
@@ -43,7 +43,7 @@ function makeSound(key) {
              tom4.play();
              break;
             default:
-             console.log(pressedKey);        
+             console.log(key);        
         }
 }
 
